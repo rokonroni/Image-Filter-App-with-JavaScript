@@ -1,34 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Image Search App</h1>
-    <form action="">
-        <input type="text" id="search-input" placeholder="Search for image">
-        <button id="search-button"> Search</button>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="leading-relaxed">
+    <h1 class="font-extrabold text-3xl text-center mt-6 mb-8">
+      Image Search App
+    </h1>
+    <form action="" class="flex justify-center items-center mb-6">
+      <input
+        type="text"
+        id="search-input"
+        class="w-1/3 px-5 py-2 shadow text-gray-600 rounded-lg focus:outline-green-600"
+        placeholder="Search for image"
+      />
+
+      <button
+        id="search-button"
+        class="px-4 py-1.5 bg-green-600 border-2 border-green-600 text-white font-bold rounded ml-2 hover:bg-transparent hober:border-green-600 hover:text-green-600"
+      >
+        Search
+      </button>
     </form>
 
-    <div class="search-results">
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1662010021854-e67c538ea7a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=352&q=80" alt="Car in road">
-            <a href="https://unsplash.com/photos/Sx_bKz49IO0" target="_blank">Car in road</a>
-        </div>
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1682687982093-4773cb0dbc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Mountain nature">
-            <a href="https://unsplash.com/photos/i60yUhfWeYI" target="_blank">Mountain nature</a>
-        </div>
-        <div class="search-result">
-            <img src="https://images.unsplash.com/photo-1685979457408-e897fca4782f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Building">
-            <a href="https://unsplash.com/photos/qsQWS2TI9as" target="_blank">Building </a>
-        </div>
+    <div
+      class="search-results flex flex-cols justify-evenly space-x-1 px-2 m-auto"
+    >
+      <div class="search-result mb-5 rounded shadow overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1662010021854-e67c538ea7a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=352&q=80"
+          alt="Car in road"
+          class="w-80 h-80 object-center opacity-100 hover:opacity-80 transition"
+        />
+        <a
+          href="https://unsplash.com/photos/Sx_bKz49IO0"
+          target="_blank"
+          class="block font-semibold text-gray-600 capitalize py-2 text-center hover:text-gray-950"
+          >Car in road</a
+        >
+      </div>
+      <div class="search-result mb-5 rounded shadow overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1682687982093-4773cb0dbc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+          alt="Mountain nature"
+          class="w-80 h-80 object-center hover:opacity-80 transition"
+        />
+        <a
+          href="https://unsplash.com/photos/i60yUhfWeYI"
+          target="_blank"
+          class="block font-semibold text-gray-600 capitalize py-2 text-center hover:text-gray-95"
+          >Mountain nature</a
+        >
+      </div>
+      <div class="search-result mb-5 rounded shadow overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1685979457408-e897fca4782f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+          alt="Building"
+          class="w-80 h-80 object-center hover:opacity-80 transition"
+        />
+        <a
+          href="https://unsplash.com/photos/qsQWS2TI9as"
+          target="_blank"
+          class="block font-semibold text-gray-600 capitalize py-2 text-center hover:text-gray-95"
+          >Building
+        </a>
+      </div>
+      <div class="search-result mb-5 rounded shadow overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1662010021854-e67c538ea7a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=352&q=80"
+          alt="Car in road"
+          class="w-80 h-80 object-center hover:opacity-80 transition"
+        />
+        <a
+          href="https://unsplash.com/photos/Sx_bKz49IO0"
+          target="_blank"
+          class="block font-semibold text-gray-600 capitalize py-2 text-center hover:text-gray-95"
+          >Car in road</a
+        >
+      </div>
     </div>
+    <div class="text-center">
+        <button
+        id="show-more-button"
+        class="px-4 py-1.5 bg-green-600 border-2 border-green-600 text-white font-bold rounded ml-2 hover:bg-transparent hober:border-green-600 hover:text-green-600 hidden "
+      >
+        Show more
+      </button>
+    </div>
+    
 
     <script src="JS/main.js"></script>
-</body>
+  </body>
 </html>
